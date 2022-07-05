@@ -8,3 +8,4 @@ function mostrar()
 	alert("Esto funciona de maravilla");// muestro por el recuadro de la función alert el mensaje "Esto funciona de maravilla".
 }
 
+//https://onlinegdb.com/oODr9lWCMq

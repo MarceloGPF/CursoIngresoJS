@@ -13,3 +13,4 @@ function mostrar()
 	alert(nombre);// Muestro el valor asignado a la variable por el recuadro de la función alert.
 }
 
+//https://onlinegdb.com/HKWlCFCVN
