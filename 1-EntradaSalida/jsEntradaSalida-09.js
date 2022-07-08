@@ -1,47 +1,34 @@
 /*
 Alumno: Marcelo Gastón Pérez Foche.
-E/S - Ejercicio 09.
+E/S - Ejercicio 09 ------------------------------Ingreso dinámico por prompt.
 Debemos lograr tomar el importe por ID ,
 transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
-	let sueldo;// declaro la variable sueldo.
+      let sueldo;
+	  let IngreseAumento;
 
-	sueldo = document.getElementById("txtIdSueldo").value;
-	/*
-		obtengo el valor obtenido con document.getElementById("").value
-		y se lo asigno a la variable sueldo.
-	*/ 
+	  let resultado;
 
-	sueldo = parseInt(sueldo);
-	/*
-		paso a número el valor de la variable con la función parseInt
-		y se lo asigno a la variable sueldo.
-	*/ 
+	  sueldo = document.getElementById("txtIdSueldo").value;
 
+	  sueldo = parseInt(sueldo);
 
-	let RESULTADO;// declaro la variable RESULTADO
-	
-	RESULTADO = sueldo * 0.10;
-	/*
-		tomo el valor del sueldo que ingresó el usuario y lo multiplico por 0.10 para obtener el 
-		10% del sueldo ingresado por el usuario finalmente asigno ese valor a la variable RESULTADO. 
-	*/ 
+	  IngreseAumento = prompt("Ingrese el porcentaje de aumento deseado:");
+      
+      IngreseAumento = parseInt(IngreseAumento);
 
 
-	let resultadoMasPorcentaje;// declaro la variable resultadoMasPorcentaje. 
+	  resultado = sueldo * IngreseAumento / 100; 
+	  
 
-	resultadoMasPorcentaje = RESULTADO + sueldo;
-	/*
-		tomo el valor del 10 porciento del sueldo, lo sumo al sueldo original y
-		asigno el valor obtenido a la variable resultadoMasPorcentaje. 
-	*/ 
-
-
-	document.getElementById("txtIdResultado").value = resultadoMasPorcentaje;
-	/*muestro el valor asignado a la variable resultadoMasPorcentaje en el cuadro de texto txtIdResultado*/
+	document.getElementById("txtIdResultado").value = resultado;
 }
 
-//https://onlinegdb.com/zYLPmhL_W
+//https://onlinegdb.com/zYLPmhL_W  SIN PROMPT
+
+// CON PROMPT  https://onlinegdb.com/gXUDDeuDF
+
+
