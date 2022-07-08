@@ -47,17 +47,17 @@ function Promedio ()
 
     precioProdA = document.getElementById("txtIdPrecioUno").value;
 
-    precioProdA = parseInt(precioProdA);
+    precioProdA = parseFloat(precioProdA);
 
 
     precioProdB = document.getElementById("txtIdPrecioDos").value;
 
-    precioProdB = parseInt(precioProdB);
+    precioProdB = parseFloat(precioProdB);
 
 
     precioProdC = document.getElementById("txtIdPrecioTres").value;
 
-    precioProdC = parseInt(precioProdC);
+    precioProdC = parseFloat(precioProdC);
 
 
     promedio = (precioProdA + precioProdB + precioProdC)/3;
@@ -77,17 +77,17 @@ function PrecioFinal ()
 
     precioProdA = document.getElementById("txtIdPrecioUno").value;
 
-    precioProdA = parseInt(precioProdA);
+    precioProdA = parseFloat(precioProdA);
 
 
     precioProdB = document.getElementById("txtIdPrecioDos").value;
 
-    precioProdB = parseInt(precioProdB);
+    precioProdB = parseFloat(precioProdB);
 
 
     precioProdC = document.getElementById("txtIdPrecioTres").value;
 
-    precioProdC = parseInt(precioProdC);
+    precioProdC = parseFloat(precioProdC);
 
 
     sumaProd = precioProdA + precioProdB + precioProdC;
