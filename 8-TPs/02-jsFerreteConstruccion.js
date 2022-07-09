@@ -24,7 +24,7 @@ function Rectangulo ()
 
     perimetro = 2 * ancho + 2 * largo;
 
-    tresAlambres = perimetro / 3;
+    tresAlambres = perimetro * 3;
 
     
     alert("Debe emplear tres alambres de " + tresAlambres + " metros de largo.");
@@ -44,7 +44,7 @@ function Circulo ()
 
     perimetro = 2 * 3.1416 * radio;
 
-    tresAlambres = perimetro / 3;
+    tresAlambres = perimetro * 3;
 
     alert("Debe emplear tres alambres de " + tresAlambres + " metros de largo.");
 
@@ -63,8 +63,8 @@ function Materiales ()
 	let contrapisoUsuarioLargo;
     let contrapisoUsuarioAncho;
     let contrapisoReferenciaCemento;
-    let areaUsuario;
     let areaReferecia;
+    let areaUsuario;
     let contrapisoReferenciaCal;
     let bolsasCementoUsuario;
     let bolsasCalUsuario;
