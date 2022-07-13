@@ -16,16 +16,19 @@ function CalcularPrecio ()
 {
     let lampara;
  	let cantidadDeLamparas;
+    let calculoTotal;
     
     
-
     let marca;
     let descuento;
+
     
-    let calculoTotal;
     let resultado;
+    let mensaje;
     let aPagar;
+   
     
+
     descuento = 0;
     
     lampara = 35;
@@ -38,29 +41,37 @@ function CalcularPrecio ()
     calculoTotal = cantidadDeLamparas * lampara;
     
     
-    /*
-    // A
     
-    if(cantidadDeLamparas >= 6){
         
+    if(cantidadDeLamparas >= 6 && marca != "ArgentinaLuz"){                   // A
+
         descuento = 0.50;
-
-    }*/
-
-    // B
-
-
-
-
-    if(cantidadDeLamparas >= 5 && marca == "ArgentinaLuz"){
-
-        descuento = 0.40;
-           
+        
     }else{
 
-        descuento 
-
+        if(cantidadDeLamparas > 5 && marca == "ArgentinaLuz"){          //B
+    
+            descuento = 0.40;
+               
+        }
     }
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
@@ -68,6 +79,9 @@ function CalcularPrecio ()
         
         aPagar =  calculoTotal - resultado;
         
+        mensaje = "Usted tiene un descuento de " + (descuento * 100) + " %";
+
+        alert(mensaje);
         
         document.getElementById("txtIdprecioDescuento").value = aPagar;
         
@@ -79,7 +93,7 @@ function CalcularPrecio ()
     
     
     
-}
+
 // ----B
 
 //https://onlinegdb.com/FxFBHy_Hs ---- A
