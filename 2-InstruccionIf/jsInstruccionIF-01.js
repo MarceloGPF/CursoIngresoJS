@@ -15,14 +15,8 @@ function mostrar()
 		
 		alert("niña bonita");
 
-	}else{
-
-		alert("no es niña bonita");
-
 	};
 
-
-
-
-
 }//FIN DE LA FUNCIÓN
+
+//https://onlinegdb.com/EmyY7LGxE
