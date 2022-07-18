@@ -1,6 +1,6 @@
 /*
 Alumno: Marcelo Gastón Pérez Foche.
-TP ferrete iluminación: A
+TP ferrete iluminación.
 */
 /*4.	Para el departamento de iluminación:
 Tomando en cuenta que todas las lámparas están en oferta al mismo precio de $35 pesos final.
@@ -123,8 +123,11 @@ function CalcularPrecio ()
 
         totalConImpuesto =  aPagar + porcentajeImpuestoSobreTotalConDescuento;
 
-        mensajeImpuesto = "Usted pago " + ( porcentajeImpuestoSobreTotalConDescuento + 100 ) +  " de IIBB"
+        mensajeImpuesto = "Usted pago " + ( porcentajeImpuestoSobreTotalConDescuento * 100 ) +  " de IIBB";
 
+        alert(mensajeImpuesto);
+
+        
     }
     
     mensaje = "Usted tiene un descuento de " + (descuento * 100) + " %";
@@ -147,4 +150,9 @@ function CalcularPrecio ()
 // ----B
 
 //https://onlinegdb.com/FxFBHy_Hs ---- A
+
+
+/*https://onlinegdb.com/yza085P8i
+    ejercicio hecho en clase
+*/
 
