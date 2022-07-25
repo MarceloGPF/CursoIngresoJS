@@ -12,18 +12,67 @@ hasta que el usuario quiera, mostrar:
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar()
 {
-	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
 
-	respuesta="si";
+	let numeroIngresado;
+	let pregunta;
+	let sumaNegativos;
+	let sumaPositivos;
+	let contadorPositivo;
+	let contadorNegativo;
+	let contadorDeCeros;
+	let resto;
+	let contadorDeNumerosPares;
 
-	while(respuesta=="si")
-	{
+	sumaNegativos = 0;
+	sumaPositivos = 0;
+	contadorNegativo = 0;
+	contadorPositivo= 0;
+	contadorDeCeros = 0;
+	contadorDeNumerosPares = 0;
+
+	pregunta = "si";
+	
+	while(pregunta == "si"){
+
+		numeroIngresado = prompt("Ingrese un nro");
+		numeroIngresado = parseInt(numeroIngresado);
 		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+		if(numeroIngresado < 0){
 
-	document.write("la suma de negativos es :"+sumaNegativos);
-}//FIN DE LA FUNCIÓN
+			sumaNegativos = numeroIngresado + sumaNegativos;
+			contadorNegativo = contadorNegativo + 1;
+
+		}
+		else
+		{
+			if(numeroIngresado > 0)
+			{
+				sumaPositivos = numeroIngresado + sumaPositivos;
+				contadorPositivo = contadorPositivo + 1;
+
+			}
+			else
+			{
+				contadorDeCeros = contadorDeCeros + 1;
+			}
+		}
+		resto = numeroIngresado % 2;
+
+		if(resto == 0)
+		{
+			contadorDeNumerosPares = contadorDeNumerosPares + 1;
+		}
+		
+		pregunta = prompt("Desea seguir ingresando nros si/no");
+	}
+
+
+
+	document.write(contadorPositivo);
+	document.write(contadorNegativo);
+	document.write(contadorDeCeros);
+
+}	
+
+
+//https://onlinegdb.com/L6kYQ4tFP
